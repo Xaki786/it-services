@@ -9,6 +9,7 @@ import ServicesSummary from "@/components/ServicesSummary";
 import AboutUs from "@/components/AboutUs";
 import Container from "@/components/Container";
 import Testimonials from "@/components/Testimonials";
+import ContactInfoForm from "@/components/ContactInfoForm";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function Home() {
           <HeroSection />
           <Container>
             <ServicesSummary />
+            <ContactInfoForm />
             <AboutUs />
             <Testimonials />
           </Container>
