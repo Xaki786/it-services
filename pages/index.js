@@ -8,6 +8,7 @@ import HeroSection from "@/components/HeroSection";
 import ServicesSummary from "@/components/ServicesSummary";
 import AboutUs from "@/components/AboutUs";
 import Container from "@/components/Container";
+import Testimonials from "@/components/Testimonials";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,13 @@ export default function Home() {
         <main
           className={`flex min-h-screen flex-col justify-between${inter.className}`}
         >
-      <HeroSection />
-      <Container>
-          <ServicesSummary /></Container>
+          <HeroSection />
+          <Container>
+            <ServicesSummary />
+          </Container>
+          <section className="bg-gray-900 w-full">
+            <Testimonials />
+          </section>
           <AboutUs />
 
           <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
