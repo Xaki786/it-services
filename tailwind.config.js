@@ -12,6 +12,12 @@ module.exports = {
   theme: {
     darkMode: "class",
     extend: {
+      height: (theme) => ({
+        "screen-75": "75vh",
+        "screen/3": "calc(100vh / 3)",
+        "screen/4": "calc(100vh / 4)",
+        "screen/5": "calc(100vh / 5)",
+      }),
       colors: {
         primarySelected: "#1e3a8a",
         primaryHover: "#2563eb",

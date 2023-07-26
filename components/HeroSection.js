@@ -5,7 +5,7 @@ import Container from "./Container";
 
 const HeroSection = () => {
   return (
-    <section className="bg-gray-800 text-gray-100">
+    <section className="bg-gray-800 text-gray-100 lg:h-screen-75  py-20 sm:mb-10 lg:mb-0">
       <Container>
         <div className="flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
           <div className="flex flex-col justify-center p-6 text-center rounded-sm md:max-w-md lg:max-w-lg xl:max-w-2xl lg:text-left">
@@ -34,11 +34,13 @@ const HeroSection = () => {
               </a> */}
             </div>
           </div>
-          <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 rounded-lg">
-            <img
-              src="images/hero-image.jpg"
+          <div className="flex items-center justify-center p-6 pt-18 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 rounded-lg">
+            <Image
+              src="/images/hero-image.jpg"
               alt="Hero Image"
-              className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 "
+              width={800}
+              height={800}
+              className="object-contain h-72 sm:h-80 lg:h-max xl:h-112 2xl:h-128 "
             />
           </div>
         </div>

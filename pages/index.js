@@ -22,11 +22,10 @@ export default function Home() {
           <HeroSection />
           <Container>
             <ServicesSummary />
-          </Container>
-          <section className="bg-gray-900 w-full">
+            <AboutUs />
             <Testimonials />
-          </section>
-          <AboutUs />
+          </Container>
+          <section className="w-full"></section>
 
           <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
             <a

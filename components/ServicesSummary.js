@@ -42,8 +42,8 @@ const services = [
 ];
 const ServicesSummary = () => {
   return (
-    <section className="services-summary text-center py-12">
-      <h2 className="text-3xl font-bold mb-6">Our Services</h2>
+    <section className="services-summary text-center py-12 pb-0">
+      <h2 className="text-3xl font-bold mb-12">Our Services</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {services.map(
           ({ label, key, img, callToActionText, content, href }) => (

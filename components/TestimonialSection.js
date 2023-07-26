@@ -6,12 +6,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const TestimonialSection = ({ testimonials }) => {
   return (
-    <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+    <div className="rounded-lg py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 bg-white">
       <div className="mx-auto max-w-screen-sm">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
+        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
           Testimonials
         </h2>
-        <p className="mb-8 font-light text-gray-400 lg:mb-16 sm:text-xl">
+        <p className="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl">
           Explore the whole collection of open-source web components and
           elements built with the utility classes from Tailwind
         </p>
@@ -32,10 +32,10 @@ const TestimonialSection = ({ testimonials }) => {
         selectedItem={1}
       >
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="p-4 max-w-xl mx-auto mb-8 ">
-            <figure className="flex flex-col justify-center items-center p-8 text-center bg-gray-800 border-b border-gray-700 md:p-12 h-80 rounded-lg">
-              <blockquote className="mx-auto mb-8 max-w-2xl text-gray-400">
-                <h3 className="text-lg font-semibold text-white">
+          <div key={index} className="p-4 max-w-xl mx-auto mb-8">
+            <figure className="flex flex-col justify-center items-center p-8 text-center bg-white border-b border-gray-300 md:p-12 h-80 rounded-lg shadow-lg">
+              <blockquote className="mx-auto mb-8 max-w-2xl text-gray-500">
+                <h3 className="text-lg font-semibold text-gray-900">
                   {testimonial.title}
                 </h3>
                 <p className="my-4">{testimonial.quote}</p>
@@ -50,9 +50,9 @@ const TestimonialSection = ({ testimonials }) => {
                     height={400}
                   />
                 </div>
-                <div className="space-y-0.5 font-medium text-white text-left">
+                <div className="space-y-0.5 font-medium text-gray-900 text-left">
                   <div>{testimonial.name}</div>
-                  <div className="text-sm font-light text-gray-400">
+                  <div className="text-sm font-light text-gray-500">
                     {testimonial.designation}
                   </div>
                 </div>
