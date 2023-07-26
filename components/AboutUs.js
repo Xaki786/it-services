@@ -55,16 +55,16 @@ const AboutUs = () => {
           expertise and commitment to excellence.
         </p>
         <h3 className="text-2xl font-medium mt-4 text-center">Our Values</h3>
-        <p className="text-gray-700 mt-4 ml-4">
-          <ol class="list-decimal">
+        <div className="text-gray-700 mt-4 ml-4">
+          <ol className="list-decimal">
             {aboutUsContent.map(({ heading, content, key }) => (
               <li key={key}>
                 <h4 className="text-xl font-medium mt-4">{heading}</h4>
-                <p>{content}</p>
+                <div>{content}</div>
               </li>
             ))}
           </ol>
-        </p>
+        </div>
       </div>
     </section>
   );
