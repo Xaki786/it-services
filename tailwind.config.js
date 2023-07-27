@@ -19,8 +19,12 @@ module.exports = {
         "screen/5": "calc(100vh / 5)",
       }),
       colors: {
-        primarySelected: "#1e3a8a",
-        primaryHover: "#2563eb",
+        primarySelected: "#76E482",
+        primaryHover: "#3bc774",
+        "dark-bg-color": "#232223",
+        "dark-fg-color": "#f3f4f6",
+        "dark-heading-color": "",
+        "light-heading-color": "",
         primary: {
           50: "#eff6ff",
           100: "#dbeafe",

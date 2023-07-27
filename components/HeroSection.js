@@ -5,7 +5,7 @@ import Container from "./Container";
 
 const HeroSection = () => {
   return (
-    <section className="bg-gray-800 text-gray-100 lg:h-screen-75  py-20 sm:mb-10 lg:mb-0">
+    <section className="bg-dark-bg-color text-dark-fg-color lg:h-screen-75  py-20 sm:mb-10 lg:mb-0">
       <Container>
         <div className="flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
           <div className="flex flex-col justify-center p-6 text-center rounded-sm md:max-w-md lg:max-w-lg xl:max-w-2xl lg:text-left">
